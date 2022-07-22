@@ -1,0 +1,633 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --time:1s;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-family: "Cairo";
+
+}
+
+.box {
+  perspective: 800px;
+  overflow: hidden;
+}
+
+.container {
+  position: relative;
+  width: 300px;
+  height: 517px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform-style: preserve-3d;
+  transition: 1s 0s linear;
+  transform-origin: right center;
+}
+
+.container:hover {
+  transform: translateX(-100%) rotatey(-180deg);
+}
+img {
+  width: 100%;
+  height: 100%;
+}
+
+.container .face {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  backface-visibility: hidden;
+  overflow: hidden;
+  background-color: #090611;
+}
+
+.container .back {
+  transform: rotateY(180deg);
+}
+
+.container .front {
+  backface-visibility: hidden;
+}
+
+ .shabeOne {
+  position: absolute;
+  width: 22.29px;
+  height: 103.96px;
+  left: 0;
+  top: -29.82px;
+  background: #013a87;
+  transform: rotate(45.31deg);
+  animation: shapeOne  var(--time) 0s ease ;
+
+}
+@keyframes shapeOne {
+  0%{
+    top:-90.82px;
+    animation-play-state: paused;
+  }
+  100%{
+    top:-29.82px;
+  }  
+}
+
+
+ .shabeTwo {
+  position: absolute;
+  width: 59.76px;
+  height: 62.06px;
+  left: 278px;
+  top: -23.96px;
+  border-radius: 50%;
+  background: #0068eb;
+  animation: ball  var(--time) 0s cubic-bezier(1,-0.03, 0, 0.78) ;
+  animation-fill-mode: forwards;
+  transform: scale(0);
+}
+
+ .shabeThree {
+  position: absolute;
+  left: -28.67px;
+  top: 54.6px;
+  animation: shapeThree  var(--time) 0s ease ;
+}
+
+@keyframes shapeThree {
+  0%{
+    left: -60.67px;
+    top: 100.6px;
+  }
+  100%{
+    left: -28.67px;
+    top: 54.6px;
+  }
+}
+
+/*      */
+
+.shabeFour {
+  position: absolute;
+  right: -28px;
+  top: 80px;
+  animation: shapeFour  var(--time) 0s ease ;
+}
+@keyframes shapeFour {
+  0%{
+    right: -55px;
+    top: 15px;
+  }
+  100%{
+    right: -28px;
+    top: 80px;
+  }
+}
+
+
+/* 
+
+ */
+
+ .shabeFive {
+  position: absolute;
+  width: 55.5px;
+  height: 56.45px;
+  left: -33.39px;
+  top: 296.83px;
+  transform: rotate(-180deg);
+  animation: shapeFive  var(--time) 0s ease ;
+}
+@keyframes shapeFive {
+  0%{
+    left: -54.39px;
+    top: 333.83px;
+  }
+  100%{
+    left: -33.39px;
+    top: 296.83px;
+  }
+}
+ .shabeSix {
+  position: absolute;
+  left: -28.67px;
+  top: 474.89px;
+  animation: shapeSix  var(--time) 0s ease ;
+}
+
+
+@keyframes shapeSix {
+  0%{
+    left: -60.67px;
+    top: 514.89px;
+  }
+  100%{
+    left: -28.67px;
+    top: 474.89px;
+  }
+}
+
+
+ .shabeSevean {
+  position: absolute;
+  left: 197.6px;
+  top: 507.1px;
+  animation: shapeSevean  var(--time) 0s ease ;
+}
+
+@keyframes shapeSevean {
+  0%{
+    left: 172.6px;
+    top: 516.1px;
+  }
+  100%{
+    left: 197.6px;
+    top: 507.1px;
+  }
+}
+
+ .shapeEight {
+  position: absolute;
+  width: 22.24px;
+  height: 53.94px;
+  left: 290px;
+  top: 485.89px;
+  background: #014fb4;
+  transform: rotate(44.26deg);
+  animation: shapeEight  var(--time) 0s ease ;
+}
+
+@keyframes shapeEight {
+  0%{
+    left: 309px;
+    top: 504.89px;
+  }
+  100%{
+    left: 290px;
+    top: 485.89px;
+  }
+}
+
+
+.gshape {
+  position: absolute;
+  width: 407.41px;
+  height: 183.97px;
+  left: 1.33px;
+  bottom: -90px;
+  background: linear-gradient(
+    91.54deg,
+    rgba(1, 79, 180, 0) -0.05%,
+    rgba(0, 111, 255, 0.1) 30.75%
+  );
+  transform: rotate(24.79deg);
+}
+
+ .shabeNine {
+   position: absolute;
+   left: 238.85px;
+   top: 299.52px;
+  animation: shapeNine  var(--time) 0s ease ;
+  }
+
+  @keyframes shapeNine {
+    0%{
+      left: 16.85px;
+      top: 406.52px;
+    }
+    100%{
+      left: 238.85px;
+      top: 299.52px;
+    }
+  }
+
+  /*    
+
+   */
+  
+  .shabeTen {
+    position: absolute;
+    left: 26.54px;
+    top: 120.91px;
+    animation: shapeTen  var(--time) 0s ease ;
+
+}
+
+@keyframes shapeTen {
+  0%{
+    left: -65.46px;
+    top: 158.91px;
+  }
+  100%{
+    left: 26.54px;
+    top: 120.91px;
+  }
+}
+
+
+.shabeEl {
+  position: absolute;
+  left: 15.38px;
+  top: 347.02px;
+  animation: shapeEl  var(--time) 0s ease ;
+}
+
+@keyframes shapeEl {
+  0%{
+    left: -48.62px;
+    top: 394.02px; 
+  }
+  100%{
+    left: 15.38px;
+    top: 347.02px;
+  }
+}
+
+/*     */
+
+.ball {
+  position: absolute;
+  width: 14.93px;
+  height: 14.93px;
+  background: #0068ed;
+  border-radius: 50%;
+  animation: ball  var(--time) 0s cubic-bezier(1,-0.03, 0, 0.78) ;
+  animation-fill-mode: forwards;
+  transform: scale(0);
+}
+
+@keyframes ball {
+
+  100%{
+    transform: scale(1);
+  }
+}
+
+.ball1 {
+  left: 67.17px;
+  top: 428.93px;
+}
+
+.ball2 {
+  left: 243.93px;
+  top: 51.06px;
+}
+
+ .gBall {
+  position: absolute;
+  width: 350.37px;
+  height: 350.37px;
+  left: 111.95px;
+  top: -175.19px;
+opacity: 0;
+  background: rgba(1, 79, 180, 0.4);
+  filter: blur(117.839px);
+  z-index: 0;
+  animation: bobBall 2s 0s cubic-bezier(0.81,-0.03, 0.23, 1.75);
+  animation-fill-mode: forwards;
+}
+
+@keyframes bobBall {
+
+  100%{
+    opacity: 1;
+  }
+
+}
+
+.logo {
+  font-family: "Outfit";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 26.2182px;
+  line-height: 33px;
+  text-align: center;
+  margin-top: 27px;
+  color: #ffffff;
+  position: relative;
+  z-index: 111;
+  animation: logo  var(--time) 0s ease ;
+
+}
+
+@keyframes logo {
+  0%{
+    transform: translateX(-100%);
+    opacity: .2;
+  }
+  100%{
+    transform: translateX(0%);
+  }
+}
+
+.logo span:first-child {
+  color: #013a87;
+  margin-right: 5px;
+}
+.logo span:last-child {
+  color: #013a87;
+}
+.pro-image {
+  width: 129.23px;
+  height: 129.23px;
+  margin-inline: auto;
+  margin-top: 26px;
+  position: relative;
+  border-radius: 50%;
+  background: url(image/Group\ 69.svg) no-repeat center;
+  background-size: cover;
+  z-index: 11;
+}
+
+.bg {
+  margin-inline: auto;
+  background: linear-gradient(180deg, rgba(6, 83, 199, 0.1) 0%, #0653c7 70.31%)
+    center no-repeat;
+  background-size: cover;
+  width: 143.37px;
+  height: 143.37px;
+  border-radius: 50%;
+
+  transform: translate(0%, -96%);
+}
+
+.front h4 {
+  position: absolute;
+  left: 71.1px;
+  top: 238.82px;
+  font-family: "Cairo";
+  font-weight: 700;
+  font-size: 23.5678px;
+  text-align: center;
+  color: #ffffff;
+  animation: h4  var(--time) 1s ease ;
+opacity: 0;
+animation-fill-mode: forwards;
+}
+
+@keyframes h4 {
+  100%{
+    opacity: 1;
+  }
+}
+
+.front h5 {
+  position: absolute;
+  left: 103.31px;
+  top: 280px;
+
+  font-family: "Cairo";
+  font-weight: 300;
+  font-size: 16.5936px;
+
+  text-align: center;
+
+  color: #ffffff;
+  animation: h5  var(--time) 1.2s ease ;
+  opacity: 0;
+  animation-fill-mode: forwards;
+}
+
+@keyframes h5 {
+  100%{
+    opacity: 1;
+  }
+}
+
+
+.front .p1 {
+  font-family: "Cairo";
+
+  font-weight: 300;
+  font-size: 11.8782px;
+
+  text-align: center;
+
+  color: #ffffff;
+  animation: p1  var(--time) 1.4s ease ;
+  opacity: 0;
+  animation-fill-mode: forwards;
+}
+@keyframes p1 {
+  100%{
+    opacity: 1;
+  }
+}
+
+.front .p2 {
+  font-family: "Cairo";
+
+  font-weight: 300;
+  font-size: 11.8782px;
+
+  text-align: center;
+
+  color: #ffffff;
+  animation: p2  var(--time) 1.6s ease ;
+  opacity: 0;
+  animation-fill-mode: forwards;
+}
+@keyframes p2 {
+  100%{
+    opacity: 1;
+  }
+}
+
+.front .info {
+  position: absolute;
+  text-align: center;
+  bottom: 155px;
+  left: 33%;
+}
+
+.front h2 {
+  font-size: 25px;
+  color: #ffffff;
+  text-align: center;
+  margin-top: 100px;
+  position: relative;
+  z-index: 111;
+  animation: h2  var(--time) 0s ease ;
+}
+
+
+@keyframes h2 {
+  0%{
+    transform: translatey(100%);
+    opacity: .2;
+  }
+  100%{
+    transform: translatey(0%);
+  }
+}
+
+
+/* back face */
+
+.back .shabeThree {
+    left: -28.67px;
+    top: 131px;
+  }
+.back  .shabeTen {
+    left: 52px;
+    top:10px;
+  }
+
+ .back .shabeEl {
+    left: 6px;
+    top:394px ;
+  }
+
+  .back  .shabeNine {
+    left: 245px;
+    top: 205px;
+  }
+
+ .back .shabeSevean {
+    width: 101px;
+    left: 150px;
+    top: 489px;
+  }
+
+.back  .gBall {
+    left: -111.95px;
+    top: -175.19px;
+  }
+
+  .back .ball1 {
+    left: 42px;
+    top: 182px;
+  }
+
+  .back .ball2 {
+    left: 257px;
+    top: 310px;
+  }
+
+  .back h4 {
+    font-size: 27px;
+    font-family: "Cairo";
+    font-weight: 700;
+    text-align: center;
+    color: #ffffff;
+    margin-top: 50px;
+    position: relative;
+    z-index: 111;
+  }
+
+  .back .idNumber {
+    font-family: 'Poppins', sans-serif;
+    font-size: 19px;
+    font-weight: 200;
+    color: #ffffff;
+    text-align: center;
+    position: relative;
+    z-index: 222;
+    margin-top: 5px;
+    letter-spacing: 1px;
+  }
+
+  .grContainere {
+    width: 100%;
+    height: 138px;
+    display: flex;
+    justify-content: center;
+    margin-block: 30px;
+  }
+
+  .numberCon {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-inline: 70px;
+    color: #ffffff;
+    font-size: 14px;
+    font-family: 'Poppins', sans-serif;
+    letter-spacing: 4px;
+    font-weight: 400;
+  }
+
+  .mailCon{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-inline: 70px;
+    color: #ffffff;
+    font-size: 14px;
+    font-family: 'Poppins', sans-serif;
+    letter-spacing: 3px;
+    font-weight: 400;
+    margin-top: 10px;
+  }
+
+  .mailCon .mail {
+    font-size: 10px;
+    letter-spacing: initial;
+  }
+
+  .termCon {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-top: 20px;
+    padding-inline: 70px;
+    color: #ffffff;
+  }
+
+  .termCon p {
+    font-size: 10px;
+    line-height: 1.3;
+    font-weight: 300;
+    font-family: 'Poppins', sans-serif;
+    margin-top: 5px;
+  }
